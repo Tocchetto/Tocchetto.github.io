@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+
+    <input type="text" ng-model="accessToken" placeholder="Token de Acesso">
+    <input type="text" ng-model="apiUrl" placeholder="URL da API">
+    <input type="text" ng-model="infoPath" placeholder="Caminho da Informação (Opcional)">
+    <button ng-click="fetchInfo()">Obter Informações</button>
+
+    <pre>{{ data | json }}</pre>
+
+</body>
+
+</html>
